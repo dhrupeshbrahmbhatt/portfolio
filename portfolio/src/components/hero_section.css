@@ -1,0 +1,132 @@
+@import url('./fonts.css');
+
+
+.maincontent {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-family: Calibre;
+}
+.content-1 {
+    margin: 245px 0px 0px 25px;
+    position: fixed;
+}
+.content-2 {
+    margin: 180px 0px 140px 180px;
+}
+.listvertical {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    list-style: none;
+    margin: 220% 0px 0px;
+}
+
+.listitem {
+    position: relative;
+    content: '';
+    transition: 0.3s;
+    justify-content: space-between;
+}
+
+.listitem:hover {
+    bottom: 5px;
+}
+
+.intro {
+    color: var(--text-color-1);
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0px 0px 15px 0px;
+    padding: 0;
+    line-height: 18px;
+}
+.name {
+    color: var(--text-color-2);
+    font-weight: 600;
+    font-size: 70px;
+    margin: 0px 0px 15px 0px;
+    padding: 0;
+}
+.work {
+    color: var(--text-color-4);
+    font-weight: 600;
+    font-size: 72.8px;
+    margin: 0;
+    padding: 0px;
+}
+.statement {
+    color: var(--text-color-4);
+    font-weight: 400;
+    font-size: 20px;
+    width: 600px;
+    line-height: 26px;
+}
+.content-3 {
+    margin: 0;
+    position: fixed;
+    left: 95%;
+}
+.mail {
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    writing-mode: vertical-rl;
+    margin-top: 380px;
+    margin-right: 50px;
+    color: var(--text-color-3);
+    transition: 0.3s;
+}
+.mail:hover {
+    color: var(--text-color-1);
+    bottom: 3px;
+}
+.hero-section-button {
+    font-family: SF Mono Medium;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 20px 10px 10px;
+}
+@media only screen and (max-width: 600px) {
+    .mail {
+        display: none;
+    }
+    .maincontent {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .listvertical {
+        display: none;
+    }
+    .content-2 {
+        margin: 190px 0px 175px 30px;
+    }
+    .intro {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+    .name {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 44px;
+        margin-bottom: 5%;
+    }
+    .work {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 36px;
+        width: 350px;
+        margin-bottom: 10%;
+    }
+    .statement {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 23px;
+        width: 300px;
+    }
+    .hero-section-button {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+    }
+}

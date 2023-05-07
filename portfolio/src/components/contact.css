@@ -1,0 +1,73 @@
+@import url('./fonts.css');
+
+.contact-title {
+    color: var(--text-color-2);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 66px;
+    margin-right: 300px;
+    font-family: Calibre;
+    text-align: center;
+}
+.contact-p {
+    color: var(--text-color-4);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 20px 0px 1px 69px;
+    padding: 0;
+    font-family: Calibre;
+    width: 600px;
+    text-align: center;
+}
+.main-Contact {
+    margin: 224px 0px 200px 300px;
+
+}
+.contact-button {
+    text-align: center;
+    margin-left: 245px;
+    margin: 25px 0px 0px 315px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px 30px 10px 30px;
+}
+.footer_div {
+    text-align: center;
+    color: var(--text-color-1);
+    position: absolute;
+    margin: 12% 23% 0;
+}
+@media only screen and (max-width: 600px) {
+    .contact-title {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 44px;
+        text-align: center;
+        margin: 180px 0px 40px 0px;
+    }
+    .main-Contact {
+        margin: 0px 0px 0px 0px;
+    }
+    .contact-p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 23px;
+        text-align: center;
+        width: 300px;
+        margin: 0px 0px 0px 50px;
+    }
+    .contact-button {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        text-align: center;
+        margin: 20px 0px 40px 135px;
+    }
+    .footer_div {
+        width: 200px;
+        margin: 10px 24%;
+    }
+}
+

@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "SF Mono bold";
+    src: local("SF Mono-bold"), url(./Fonts/sf-mono-cufonfonts/SFMonoBold.otf) format(otf) ;
+}
+@font-face {
+    font-family: "SF Mono BoldItalic";
+    src: local("SF Mono BoldItalic") url(./Fonts/sf-mono-cufonfonts/SFMonoBoldItalic.otf) format(otf);
+}
+@font-face {
+    font-family: "SF Mono Heavy";
+    src: local("SF Mono Heavy") url(./Fonts/sf-mono-cufonfonts/SFMonoHeavy.otf) format(otf); ;
+}
+@font-face {
+    font-family: "SF Mono HeavyItalic";
+    src: local("SF Mono HeavyItalic") url(./Fonts/sf-mono-cufonfonts/SFMonoHeavyItalic.otf) format(otf); ;
+}
+@font-face {
+    font-family: "SF Mono Light";
+    src: local("SF Mono Light") url(./Fonts/sf-mono-cufonfonts/SFMonoLight.otf) format(otf); ;
+}
+@font-face {
+    font-family: "SF Mono LightItalic";
+    src: local("SF Mono LightItalic") url(./Fonts/sf-mono-cufonfonts/SFMonoLightItalic.otf) format(otf); ;
+}
+@font-face {
+    font-family: "SF Mono Medium";
+    src: local("SF Mono Medium"), url(./Fonts/sf-mono-cufonfonts/SFMonoMedium.otf) format(otf) ;
+}
+@font-face {
+    font-family: "SF Mono MediumItalic";
+    src: local("SF Mono MediumItalic"), url(./Fonts/sf-mono-cufonfonts/SFMonoMediumItalic.otf) format(otf) ;
+}
+@font-face {
+    font-family: "SF Mono Regular";
+    src: local("SF Mono Regular"), url(./Fonts/sf-mono-cufonfonts/SFMonoRegular.otf) format(otf) ;
+}
+@font-face {
+    font-family: "SF Mono RegularItalic";
+    src: local("SF Mono RegularItalic"), url(./Fonts/sf-mono-cufonfonts/SFMonoRegularItalic.otf) format(otf) ;
+}
+@font-face {
+    font-family: "SF Mono Semibold";
+    src: local("SF Mono Semibold"), url(./Fonts/sf-mono-cufonfonts/SFMonoSemibold.otf) format(otf) ;
+}
+@font-face {
+    font-family: "SF Mono SemiboldItalic";
+    src: local("SF Mono SemiboldItalic"), url(./Fonts/sf-mono-cufonfonts/SFMonoSemibold.otf) format(otf) ;
+}
+/* Calibre font */
+@font-face {
+    font-family: "Calibre";
+    src: local("Calibre") url(./Fonts/calibre/Calibre.ttf) format(ttf);
+}
+* {
+    --background-color-1: #e8e8e8 ;
+    --background-color-2: #64ffda;
+    --background-color-3: #a8b2d1;
+    --background-color-4: #233554;
+    --background-color-5: #112240;
+    --background-color-6: #0a192f;
+    --background-color-7: #0a192fd9;
+    --text-color-1: #64ffda;
+    --text-color-2: #ccd6f6;
+    --text-color-3: #a8b2d1;
+    --text-color-4: #8892b0;
+    --text-color-5: #000000;
+    --border-color-1: #64ffda;
+    --border-color-2: #233554;
+}
