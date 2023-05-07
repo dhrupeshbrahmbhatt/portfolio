@@ -42,7 +42,7 @@ export const About = () => {
                 </div>
             </div>
             <div>
-                <img src="../public/demo.jpg" alt="My image" className="about-img" />
+                <img src="https://github.com/dhrupeshbrahmbhatt/portfolio/blob/main/portfolio/public/demo.jpg" alt="My image" className="about-img" />
             </div>
         </div>
     );
