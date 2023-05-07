@@ -89,6 +89,7 @@ nav {
             margin: 0;
             display: flex;
             z-index: 3;
+            box-shadow: 0 0 20px black;
         }
        .container-1 h4 {
             font-size: 18px;
@@ -118,6 +119,7 @@ nav {
         padding-top: 30%;
         padding-bottom: 110%;
         margin: 0 -21%;
+        background-color: #112240;
        }
        .X_icon {
         display: block;
