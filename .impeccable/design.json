@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-11T00:00:00Z",
+  "title": "Design System: Dhrupesh Brahmbhatt",
+  "extensions": {
+    "colorMeta": {
+      "blue": {
+        "role": "primary",
+        "displayName": "Blued Steel",
+        "canonical": "#1e3f8f",
+        "tonalRamp": [
+          "#0c1a3d",
+          "#14295e",
+          "#1e3f8f",
+          "#3557aa",
+          "#5c79c2",
+          "#879dd8",
+          "#b4c3ea",
+          "#e1e7f7"
+        ]
+      },
+      "blue-on-dark": {
+        "role": "primary",
+        "displayName": "Blued Steel on Dark",
+        "canonical": "#9db3ff"
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Platinum Ground",
+        "canonical": "#f4f3f0",
+        "tonalRamp": [
+          "#2a2a28",
+          "#555551",
+          "#807f7b",
+          "#a9a8a4",
+          "#cfcec9",
+          "#e3e2de",
+          "#ebeae6",
+          "#f4f3f0"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#141416",
+        "tonalRamp": [
+          "#141416",
+          "#3c3c42",
+          "#6b6b70",
+          "#8e8e93",
+          "#b0b0b4",
+          "#cfcfd2",
+          "#e6e6e8",
+          "#f4f4f5"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "canonical": "#3c3c42"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Steel",
+        "canonical": "#6b6b70"
+      },
+      "hair": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "rgba(20, 20, 22, 0.18)"
+      },
+      "hair-strong": {
+        "role": "neutral",
+        "displayName": "Strong Hairline",
+        "canonical": "rgba(20, 20, 22, 0.42)"
+      },
+      "anthracite": {
+        "role": "neutral",
+        "displayName": "Anthracite",
+        "canonical": "#17171a"
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "On Dark",
+        "canonical": "#f4f3f0"
+      },
+      "on-dark-muted": {
+        "role": "neutral",
+        "displayName": "On Dark Muted",
+        "canonical": "rgba(244, 243, 240, 0.62)"
+      },
+      "on-dark-hair": {
+        "role": "neutral",
+        "displayName": "On Dark Hairline",
+        "canonical": "rgba(244, 243, 240, 0.18)"
+      }
+    },
+    "typographyMeta": {
+      "display-xl": {
+        "displayName": "Display XL",
+        "purpose": "The page headline only; one blue italic phrase allowed."
+      },
+      "display-lg": {
+        "displayName": "Display LG",
+        "purpose": "Section headings and project names."
+      },
+      "display-md": {
+        "displayName": "Display MD",
+        "purpose": "Employer names and the correspondence statement."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Measured before and after values in the specification table."
+      },
+      "result-italic": {
+        "displayName": "Result Italic",
+        "purpose": "Result statements and project one-liners."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Opening paragraph and availability note."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Entry and project text, max 60ch."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Dates, roles, section notes."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Tracked uppercase field labels, nav links, footer."
+      },
+      "reference": {
+        "displayName": "Reference",
+        "purpose": "Row and entry reference numbers."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "House easing for rules, rises, row hairlines and the action arrow."
+      },
+      {
+        "name": "rule-draw",
+        "value": "900ms",
+        "purpose": "Section hairline draws left to right once on reveal."
+      },
+      {
+        "name": "rise",
+        "value": "700ms, translateY(10px)",
+        "purpose": "Staggered fade and rise of section content via a per-element delay."
+      },
+      {
+        "name": "row-hairline",
+        "value": "420ms",
+        "purpose": "Blue hairline scales in under a hovered specification row."
+      },
+      {
+        "name": "action-hover",
+        "value": "180ms color, 260ms arrow translateX(4px)",
+        "purpose": "Text action hover."
+      },
+      {
+        "name": "signature-lift",
+        "value": "450ms cubic-bezier(0.33, 0, 0.2, 1) at 2.5s",
+        "purpose": "Signature intro sheet lifts 10px and fades."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "ledger",
+        "value": "900px"
+      },
+      {
+        "name": "nav",
+        "value": "960px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Text Action",
+      "kind": "button",
+      "refersTo": "text-action",
+      "description": "Primary action: tracked small caps on an ink hairline with a thin arrow.",
+      "html": "<a class=\"ds-act\" href=\"#\">Write to me <svg viewBox=\"0 0 18 10\" fill=\"none\" aria-hidden=\"true\"><path d=\"M0 5h16.5M12.5 1l4 4-4 4\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-act{display:inline-flex;align-items:center;gap:12px;font-family:var(--font-text),'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#141416;padding:14px 0 12px;border-bottom:1px solid #141416;text-decoration:none;transition:color 180ms ease-out,border-color 180ms ease-out}.ds-act svg{width:18px;height:10px;transition:transform 260ms cubic-bezier(0.16,1,0.3,1)}.ds-act:hover{color:#1e3f8f;border-color:#1e3f8f}.ds-act:hover svg{transform:translateX(4px)}.ds-act:focus-visible{outline:1px solid #1e3f8f;outline-offset:4px}"
+    },
+    {
+      "name": "Quiet Text Action",
+      "kind": "button",
+      "refersTo": "text-action-quiet",
+      "description": "Secondary links: graphite over a strong hairline.",
+      "html": "<a class=\"ds-act-quiet\" href=\"#\">LinkedIn <svg viewBox=\"0 0 18 10\" fill=\"none\" aria-hidden=\"true\"><path d=\"M0 5h16.5M12.5 1l4 4-4 4\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-act-quiet{display:inline-flex;align-items:center;gap:12px;font-family:var(--font-text),'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#3c3c42;padding:14px 0 12px;border-bottom:1px solid rgba(20,20,22,.42);text-decoration:none;transition:color 180ms ease-out,border-color 180ms ease-out}.ds-act-quiet svg{width:18px;height:10px;transition:transform 260ms cubic-bezier(0.16,1,0.3,1)}.ds-act-quiet:hover{color:#1e3f8f;border-color:#1e3f8f}.ds-act-quiet:hover svg{transform:translateX(4px)}.ds-act-quiet:focus-visible{outline:1px solid #1e3f8f;outline-offset:4px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-bar",
+      "description": "Hairline bar: Bodoni name, numbered small-cap links, underlined Write to me.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-nav-brand\" href=\"#\">Dhrupesh Brahmbhatt</a><ol><li><a href=\"#\"><span class=\"n\">I</span>Work</a></li><li><a href=\"#\"><span class=\"n\">II</span>References</a></li><li><a href=\"#\"><span class=\"n\">III</span>Specifications</a></li></ol><a class=\"ds-nav-write\" href=\"#\">Write to me</a></header>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:32px;height:64px;padding:0 32px;background:color-mix(in srgb,#f4f3f0 92%,transparent);border-bottom:1px solid rgba(20,20,22,.18);color:#141416}.ds-nav a{color:inherit;text-decoration:none}.ds-nav-brand{font-family:var(--font-display),Didot,Georgia,serif;font-size:19px;letter-spacing:.01em;white-space:nowrap}.ds-nav ol{display:flex;gap:28px;list-style:none;margin:0 0 0 auto;padding:0}.ds-nav li a,.ds-nav-write{font-family:var(--font-text),sans-serif;font-weight:500;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase}.ds-nav li a{display:inline-flex;gap:8px;align-items:center}.ds-nav .n{font-family:var(--font-display),Georgia,serif;font-style:italic;font-size:13px;color:#6b6b70;letter-spacing:0;text-transform:none}.ds-nav li a:hover,.ds-nav li a:hover .n{color:#1e3f8f}.ds-nav-write{border-bottom:1px solid #141416;padding-bottom:2px}.ds-nav-write:hover{color:#1e3f8f;border-color:#1e3f8f}.ds-nav a:focus-visible{outline:1px solid #1e3f8f;outline-offset:4px}"
+    },
+    {
+      "name": "Specification Row",
+      "kind": "custom",
+      "refersTo": "spec-row",
+      "description": "Signature record: reference, subject, Bodoni before-and-after figure, small-caps note; blue hairline draws on hover.",
+      "html": "<ol class=\"ds-spec\"><li><span class=\"ref\">01</span><span class=\"subj\">Operations dashboard, Qlik replaced by a service</span><span class=\"fig\"><span class=\"num\"><span class=\"before\">2 to 3 min</span><span class=\"arr\">&rarr;</span>2 to 3 s</span><small>best under 100 ms</small></span></li></ol>",
+      "css": ".ds-spec{list-style:none;margin:0;padding:0;border-top:1px solid rgba(20,20,22,.42);color:#141416;font-family:var(--font-text),sans-serif}.ds-spec li{position:relative;display:grid;grid-template-columns:40px minmax(0,1fr);column-gap:16px;row-gap:6px;align-items:baseline;padding:18px 0 16px;border-bottom:1px solid rgba(20,20,22,.18)}.ds-spec li::after{content:'';position:absolute;left:0;bottom:-1px;height:1px;width:100%;background:#1e3f8f;transform:scaleX(0);transform-origin:left;transition:transform 420ms cubic-bezier(0.16,1,0.3,1)}.ds-spec li:hover::after{transform:scaleX(1)}.ds-spec .ref{font-weight:500;font-size:13px;letter-spacing:.06em;font-variant-numeric:tabular-nums}.ds-spec .subj,.ds-spec .fig{grid-column:2}.ds-spec .subj{font-size:16.5px;line-height:1.65}.ds-spec .fig{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap}.ds-spec .num{font-family:var(--font-display),Georgia,serif;font-size:32px;line-height:1.05;letter-spacing:-.01em;font-variant-numeric:lining-nums tabular-nums}.ds-spec .before{color:#6b6b70}.ds-spec .arr{margin:0 10px;color:rgba(20,20,22,.42)}.ds-spec small{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#6b6b70}"
+    },
+    {
+      "name": "Section Head",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "Roman numeral in the label column, Display LG heading with one blue italic phrase, a short muted note.",
+      "html": "<div class=\"ds-head\"><span class=\"num\">II</span><h2>References <em>of my own.</em></h2><p>Products built outside work, each with its problem, its build and its status.</p></div>",
+      "css": ".ds-head{display:grid;grid-template-columns:160px minmax(0,1fr) auto;column-gap:40px;align-items:end;padding:20px 0 48px;border-bottom:1px solid #141416;color:#141416}.ds-head .num{font-family:var(--font-display),Georgia,serif;font-style:italic;font-size:22px;color:#6b6b70}.ds-head h2{margin:0;font-family:var(--font-display),Didot,Georgia,serif;font-weight:400;font-size:58px;line-height:1.06;letter-spacing:-.015em}.ds-head em{font-style:italic;color:#1e3f8f}.ds-head p{margin:0;max-width:28ch;font-family:var(--font-text),sans-serif;font-size:14.5px;line-height:1.6;color:#6b6b70}"
+    },
+    {
+      "name": "Status Label",
+      "kind": "chip",
+      "refersTo": "status-dot-open",
+      "description": "Small-caps status with a 6px dot: ink for shipped, solid blue for in testing.",
+      "html": "<span class=\"ds-status\">Shipped</span> <span class=\"ds-status open\">In testing</span>",
+      "css": ".ds-status{display:inline-flex;align-items:center;gap:8px;margin-right:24px;font-family:var(--font-text),sans-serif;font-weight:500;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#6b6b70}.ds-status::before{content:'';width:6px;height:6px;border-radius:50%;background:#141416}.ds-status.open::before{background:#1e3f8f;box-shadow:0 0 0 3px rgba(30,63,143,.1)}"
+    },
+    {
+      "name": "Correspondence Block",
+      "kind": "card",
+      "refersTo": "correspondence-block",
+      "description": "The single anthracite sheet: closing statement with a blue-on-dark italic phrase and on-dark actions.",
+      "html": "<section class=\"ds-dark\"><p class=\"st\">A product that needs building? <em>Write to me.</em></p><a class=\"act\" href=\"#\">Email <svg viewBox=\"0 0 18 10\" fill=\"none\" aria-hidden=\"true\"><path d=\"M0 5h16.5M12.5 1l4 4-4 4\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></section>",
+      "css": ".ds-dark{background:#17171a;color:#f4f3f0;padding:56px 40px}.ds-dark .st{margin:0 0 24px;font-family:var(--font-display),Didot,Georgia,serif;font-size:34px;line-height:1.12}.ds-dark em{font-style:italic;color:#9db3ff}.ds-dark .act{display:inline-flex;align-items:center;gap:12px;font-family:var(--font-text),sans-serif;font-weight:500;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#f4f3f0;padding:14px 0 12px;border-bottom:1px solid #f4f3f0;text-decoration:none;transition:color 180ms ease-out,border-color 180ms ease-out}.ds-dark .act svg{width:18px;height:10px;transition:transform 260ms cubic-bezier(0.16,1,0.3,1)}.ds-dark .act:hover{color:#9db3ff;border-color:#9db3ff}.ds-dark .act:hover svg{transform:translateX(4px)}.ds-dark .act:focus-visible{outline:1px solid #9db3ff;outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Manufacture's Specification Sheet",
+    "overview": "The site reads like a haute-horlogerie catalogue of references: a cool platinum sheet, ink set in a high-contrast Didone, and every claim filed as a numbered row with a date and a measured figure. Luxury here is whitespace and restraint; precision is the 1px hairline, the tabular numeral and the before-and-after set in the same figures. Nothing is boxed, lifted or shaded. Structure comes entirely from hairline rules, a 12-column grid and a fixed 160px label column that runs down every section like the left margin of a ledger.\n\nDensity is low and deliberate. A page is a sequence of sheets: a Roman section numeral in Bodoni italic, a display headline with at most one italic word in blued steel, a hairline that draws itself in from the left, then rows. The one change of material is the anthracite correspondence block at the foot, the only dark surface in the system.\n\nMotion is quiet and mechanical: rules draw left to right once, text rises 10px and fades in on a staggered delay, a hovered row grows a blued hairline beneath it. Everything is present at rest under reduced motion and without JavaScript.",
+    "keyCharacteristics": [
+      "Cool platinum ground, ink type, one blued-steel accent.",
+      "Bodoni Moda display with optical sizing; Hanken Grotesk text with tabular numerals.",
+      "Hairlines, not containers: no cards, no shadows, no gradients, square corners.",
+      "Every record carries a reference number and a measured result.",
+      "Text actions only: tracked small caps over a 1px underline that turns blue.",
+      "One anthracite block, reserved for correspondence."
+    ],
+    "rules": [
+      {
+        "name": "The One Blue Rule",
+        "body": "Blued steel marks interaction, focus, or the one emphasised italic word per headline. It never fills a surface, never colours body copy, and never appears twice in one headline.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Dark Sheet Rule",
+        "body": "Anthracite is the correspondence block only. Do not alternate light and dark sections.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Italic Word Rule",
+        "body": "A display headline may set one closing phrase in Bodoni italic, and that phrase is blue. The rest stays roman ink.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "Body text runs with tabular numerals on; figures are always set in lining tabular Bodoni so before and after align.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hairline Rule",
+        "body": "Every division is a 1px line. Containers, cards and lifted surfaces do not exist in this world.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** divide with 1px hair or hair-strong lines and let whitespace carry the luxury.",
+      "**Do** give every record a reference number and a measured result (entries add a date), with figures in lining tabular Bodoni.",
+      "**Do** put labels, dates and references in the 160px label column at 900px and up.",
+      "**Do** set actions as tracked small caps on a 1px underline that turns blue on hover, with the thin SVG arrow.",
+      "**Do** keep blued steel to interaction, focus and the one italic headline phrase.",
+      "**Do** make every motion present at rest under reduced motion and without JavaScript."
+    ],
+    "donts": [
+      "**Don't** use cards, drop shadows, gradients or rounded corners; the only round shape is the 6px status dot.",
+      "**Don't** add filled or pill buttons.",
+      "**Don't** add a second dark section or alternate light and dark sheets.",
+      "**Don't** use blue on body copy, fills or more than one phrase per headline.",
+      "**Don't** warm the ground toward cream or introduce a second accent hue.",
+      "**Don't** set display type in a system face or fall back to Hanken for headlines."
+    ]
+  }
+}
