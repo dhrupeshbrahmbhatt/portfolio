@@ -86,10 +86,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         {children}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdGraph()) }} />
-        {/* Analytics waits until the page is idle so it never competes with the first paint. */}
-        <Script src={`https://www.googletagmanager.com/gtag/js?id=${profile.gaId}`} strategy="lazyOnload" />
+        {/* Analytics waits until the page is idle so it never competes with the first paint,
+            and only fires on the live host so localhost and preview runs stay out of the data. */}
         <Script id="ga" strategy="lazyOnload">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${profile.gaId}');`}
+          {`if(location.hostname==='dhrupeshbrahmbhatt.github.io'){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${profile.gaId}');var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=${profile.gaId}';document.head.appendChild(s)}`}
         </Script>
       </body>
     </html>
